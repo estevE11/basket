@@ -19,7 +19,8 @@ public class Team {
     }
 
     public void addPlayer(Player player) {
-       this.players.add(player);
+        if(this.players.size() >= 20) return;
+        this.players.add(player);
     }
 
     public List<Player> getPlayers() {
